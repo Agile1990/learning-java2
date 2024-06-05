@@ -17,6 +17,5 @@ public class PlayWithWhileLoop {
             System.out.println(j);
             j += 2; // j = j + 2
         }
-
     }
 }

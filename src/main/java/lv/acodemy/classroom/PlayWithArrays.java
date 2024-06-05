@@ -1,6 +1,7 @@
 package lv.acodemy.classroom;
 
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class PlayWithArrays {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class PlayWithArrays {
 
         //Creating an array
         numbers = new int[18];
-        //int[] = new int[18];
+        //int[] numbers = new int[18];
 
         System.out.println(Arrays.toString(numbers));
 
@@ -33,11 +34,15 @@ public class PlayWithArrays {
         numbers[17] = 18;
         System.out.println(Arrays.toString(numbers));
 
+        // Create int array with numbers
+
         int[] evenNumbers = {2, 4, 6, 8, 10, 12,};
 
         /*evenNumbers[6] = 10;
 
         System.out.println(Arrays.toString(evenNumbers));*/
+
+        // Create String array with names
 
         String[] names = {"Jhon", "Michael", "Anna", "Mary"};
 
@@ -45,6 +50,10 @@ public class PlayWithArrays {
         System.out.println(names[1]);
         System.out.println(names[2]);
         System.out.println(names[3]);
+
+        // Create String array that will contain fruits
+        // Array should contain at least 5 fruits
+        // Print each fruit separately
 
         String[] fruits = {"Apple", "Banana", "Melon", "Lemon", "Peach"};
 
@@ -54,6 +63,7 @@ public class PlayWithArrays {
         System.out.println(fruits[3]);
         System.out.println(fruits[4]);
 
-
+        Stream.of(fruits).forEach(System.out::println);
+        Stream.of(fruits).filter(s -> s.equals("Peach")).forEach(System.out::println);
     }
 }
