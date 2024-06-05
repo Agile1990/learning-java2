@@ -15,22 +15,25 @@ public class PlayWithForLoops {
             System.out.println(i);
         }
 
-        //Calculate sum of of numbers from 1 - 10
+        //Calculate sum of numbers from 1 - 10
 
         int sum = 0;
         for (int i = 1; i <= 10; i++) {
             sum = sum + i;
-            System.out.println(i);
         }
-
+        System.out.println("Sum: " + sum);
 
         //Print elements from array
 
-        int[] numbers = {2, 40, 50, 60, 70, 100, 150};
+        int[] numbers = {13, 30, 50, 60, 70, 100, 150};
 
-        for (int i = 0; i <= numbers.length; i++) {
+        for (int i : numbers) {
             System.out.println(i);
         }
+
+        /* for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        } */
 
 
         //Print numbers in reverse order from 10 to 1
@@ -45,8 +48,7 @@ public class PlayWithForLoops {
         for (int i = 1; i <= 10; i++) {
             int result = number * i;
             System.out.println(String.format("%d * %d = %d", number, i, result));
+            //System.out.println(number + " " + i + " " + result);
         }
-
-
     }
 }

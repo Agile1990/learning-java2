@@ -8,11 +8,19 @@ public class PlayWithString {
 
         // My name is Aleksandrs Taranenko
 
+        // Concatenation
+
         String myText = "My name is: " + name + " " + surname;
         System.out.println(myText);
         System.out.println("My name is: " + name + " " + surname);
 
-        //Interpolation
+        // Interpolation
+        // %s - for text
+        // %d - for numeric values
+
+        String interpolation = String.format("My name is: %s %s", name, surname);
+        System.out.println(interpolation);
+        System.out.println(String.format("My name is: %s %s", name, surname));
 
 
         //Classwork
@@ -32,7 +40,5 @@ public class PlayWithString {
 
         String result = String.format("%s %s is %d years old and lives in %s", firstName, lastName, age, town);
         System.out.println(result);
-
-
     }
 }
