@@ -108,7 +108,8 @@ public class PlayWithStatements {
                 System.out.printf("Number: %d is positive number\n", number);
             } else if (number < 0) {
                 System.out.printf("Number: %d is negative number\n", number);
-            }
+            } else {
+                System.out.printf("Number: %d is equal to 0\n", number);
          */
 
         for (int number : numbers) {

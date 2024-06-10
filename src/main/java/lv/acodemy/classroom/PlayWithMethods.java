@@ -49,11 +49,10 @@ public class PlayWithMethods {
     // Palindrome (kayak, civic, rotator, tenet, repaper, madam)
 
     public static boolean isPalindrome(String word) {
-        StringBuilder reverseWord = new StringBuilder();
+        String reversedWord = "";
         for (int i = word.length() - 1; i >= 0; i--) {
-            reverseWord.append(reverseWord.charAt(i));
-            //reverseWord = reverseWord += word.charAt(i);
+            reversedWord += word.charAt(i);
         }
-        return word.contentEquals(reverseWord);
+        return word.contentEquals(reversedWord);
     }
 }
